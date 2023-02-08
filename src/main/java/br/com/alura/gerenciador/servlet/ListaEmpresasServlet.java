@@ -24,16 +24,6 @@ public class ListaEmpresasServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Banco banco = new Banco();
 		List<Empresa> empresas = banco.getEmpresas();
-
-		PrintWriter out = response.getWriter();
-		
-		out.println("<html><body>");
-		out.println("<ul>");
-		empresas.forEach(out::println);
-		out.println("</ul>");
-
-		out.println("</body></html>");
-
 	}
 
 
