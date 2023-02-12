@@ -1,10 +1,13 @@
 package br.com.alura.gerenciador.servlet;
 
+import java.util.Date;
+
 public class Empresa {
 
 	
 	private Integer id;
 	private String nome;
+	private Date dataAbertura = new Date();
 
 	public Empresa() {
 	}
@@ -29,13 +32,14 @@ public class Empresa {
 		this.nome = nome;
 	}
 
-	@Override
-	public String toString() {
-		return "<li>" + 
-					this.getNome() +
-			   "</li>";
+	public Date getDataAbertura() {
+		return dataAbertura;
 	}
-	
+
+	public void setDataAbertura(Date dataAbertura) {
+		this.dataAbertura = dataAbertura;
+	}
+
 	
 	
 }
