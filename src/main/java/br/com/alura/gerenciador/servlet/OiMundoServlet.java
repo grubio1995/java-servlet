@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-//oi
 @WebServlet(urlPatterns = "/oi")
 public class OiMundoServlet extends HttpServlet{
 	
